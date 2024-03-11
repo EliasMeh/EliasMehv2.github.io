@@ -313,8 +313,6 @@ caption {
     text-align: left;
 }
 
-
-
 th {
     text-align: inherit;
     text-align: -webkit-match-parent;
@@ -893,10 +891,6 @@ progress {
     --bs-gutter-y: 3rem;
 }
 
-.img-center{
-    margin: auto;
-}
-
 @media (min-width: 576px) {
     .col-sm {
         flex: 1 0 0%;
@@ -946,7 +940,7 @@ progress {
         flex: 0 0 auto;
         width: 8.33333333%;
     }
-    
+
     .col-sm-2 {
         flex: 0 0 auto;
         width: 16.66666667%;
