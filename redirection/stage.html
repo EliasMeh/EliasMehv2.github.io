@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stage Technicien GIGLA</title>
+<style>
+    body {
+        font-family: Arial, sans-serif; /* Specify your desired font here */
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+    }
+    .container {
+        max-width: 2000px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+        text-align: center;
+    }
+    .image-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 20px;
+    }
+    .image {
+        position: relative;
+        width: 1000px; /* Set a fixed width for all images */
+        height: 750px; /* Set a fixed height for all images */
+        border-radius: 8px;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    .image img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.3s ease;
+    }
+    .image:hover img {
+        transform: scale(1.1);
+    }
+    .title {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        box-sizing: border-box;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    .image:hover .title {
+        opacity: 1;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Image Showcase</h1>
+    <div class="image-grid">
+        <a href="../assets/img/stage/Portser_1.PNG" target="_blank" class="image">
+            <h2>Liste des tickets Portser</h2>
+            <img src="../assets/img/stage/Portser_1.PNG" alt="Image 1">
+        </a>
+        <a href="../assets/img/stage/Portser_2.PNG" target="_blank" class="image">
+            <h2>Exemple de ticket</h2>
+            <img src="../assets/img/stage/Portser_2.PNG" alt="Image 2">
+        </a>
+        
+    </div>
+</div>
+
+</body>
+</html>
